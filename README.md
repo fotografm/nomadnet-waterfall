@@ -7,21 +7,13 @@ It reads its spectrum from an existing **OpenWebRX** receiver over that receiver
 WebSocket, strictly read-only, so it needs no SDR hardware of its own and cannot disturb
 the radio it borrows from.
 
-```
-                          868 MHz WATERFALL
-   869.250 - 869.800 MHz  .  captured 868.48 - 870.52 MHz  .  vm103 RTL-SDR
-                 Try the different rendering modes.
-            I like the Braille one with brightness 100 best.
- ────────────────────────────────────────────────────────────────────────────
-      869.3         869.4         869.5         869.6         869.7    869.8
-        |             |             |             |             |        |
- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
- ────────────────────────────────────────────────────────────────────────────
- Live:   live waterfall (auto-refresh)
- Span:   1 min  2 min  5 min  15 min
- Render: blocks  hi-res  quad  half     Dots: square bullet middot circle braille
-```
+![868 MHz waterfall rendered in braille dots](docs/images/waterfall-braille.png)
+
+*Five minutes of the 868 MHz ISM band, drawn entirely in Micron markup with braille
+glyphs. The broad yellow column is a 250 kHz-wide channel centred on 869.525; the narrow
+red streaks near 869.74 are a separate emitter about 22 kHz wide. Nothing here is an
+image — every cell is a coloured character.*
+
 
 ## What it does
 
