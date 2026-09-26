@@ -1,0 +1,16 @@
+[Unit]
+Description=868 MHz waterfall collector (read-only OpenWebRX spectrum tap on vm103)
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=10
+
+[Service]
+Type=simple
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/waterfall/collector.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
